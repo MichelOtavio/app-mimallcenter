@@ -157,7 +157,7 @@ export class SobretudoComponent implements OnInit {
     this.base1_p++
   }
 
-  decrement_base1_p(value) {
+  decrement_base1_p() {
     if(this.base1_p-- <= 0 ){
       this.base1_p = 0;
     }
@@ -238,7 +238,7 @@ export class SobretudoComponent implements OnInit {
       this.base2_p++
     }
 
-    decrement_base2_p(value) {
+    decrement_base2_p() {
       if(this.base2_p-- <= 0 ){
         this.base2_p = 0;
       }
@@ -319,7 +319,7 @@ export class SobretudoComponent implements OnInit {
   this.base3_p++
 }
 
-decrement_base3_p(value) {
+decrement_base3_p() {
   if(this.base3_p-- <= 0 ){
     this.base3_p = 0;
   }
@@ -400,7 +400,7 @@ decrement_base3_g3() {
   this.base4_p++
 }
 
-decrement_base4_p(value) {
+decrement_base4_p() {
   if(this.base4_p-- <= 0 ){
     this.base4_p = 0;
   }
@@ -482,7 +482,7 @@ decrement_base4_g3() {
   this.base5_p++
 }
 
-decrement_base5_p(value) {
+decrement_base5_p() {
   if(this.base5_p-- <= 0 ){
     this.base5_p = 0;
   }
@@ -564,7 +564,7 @@ decrement_base5_g3() {
   this.base6_p++
 }
 
-decrement_base6_p(value) {
+decrement_base6_p() {
   if(this.base6_p-- <= 0 ){
     this.base6_p = 0;
   }
@@ -646,7 +646,7 @@ decrement_base6_g3() {
   this.base7_p++
 }
 
-decrement_base7_p(value) {
+decrement_base7_p() {
   if(this.base7_p-- <= 0 ){
     this.base7_p = 0;
   }
@@ -728,7 +728,7 @@ decrement_base7_g3() {
     this.base8_p++
   }
 
-  decrement_base8_p(value) {
+  decrement_base8_p() {
     if(this.base8_p-- <= 0 ){
       this.base8_p = 0;
     }
@@ -809,7 +809,7 @@ decrement_base7_g3() {
   this.base9_p++
 }
 
-decrement_base9_p(value) {
+decrement_base9_p() {
   if(this.base9_p-- <= 0 ){
     this.base9_p = 0;
   }
@@ -891,7 +891,7 @@ decrement_base9_g3() {
     this.base10_p++
   }
 
-  decrement_base10_p(value) {
+  decrement_base10_p() {
     if(this.base10_p-- <= 0 ){
       this.base10_p = 0;
     }
@@ -973,7 +973,7 @@ decrement_base9_g3() {
   this.base11_p++
 }
 
-decrement_base11_p(value) {
+decrement_base11_p() {
   if(this.base11_p-- <= 0 ){
     this.base11_p = 0;
   }
@@ -1054,7 +1054,7 @@ decrement_base11_g3() {
   this.base12_p++
 }
 
-decrement_base12_p(value) {
+decrement_base12_p() {
   if(this.base12_p-- <= 0 ){
     this.base12_p = 0;
   }
@@ -1135,7 +1135,7 @@ decrement_base12_g3() {
     this.base13_p++
   }
 
-  decrement_base13_p(value) {
+  decrement_base13_p() {
     if(this.base13_p-- <= 0 ){
       this.base13_p = 0;
     }

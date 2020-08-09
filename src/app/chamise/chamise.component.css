@@ -1,0 +1,89 @@
+.btn-round {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.btn-round.btn-sm {
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-danger{
+  line-height: 0;
+  font-size: 25px !important;
+}
+
+th{
+  vertical-align:middle !important;
+}
+
+
+strong{
+  font-size: 20px;
+  vertical-align:middle !important;
+  margin-right: 5px;
+}
+
+
+
+@media (min-width: 576px) {
+
+  .btn-round {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  .btn-round.btn-sm {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .btn-danger{
+    line-height: 0;
+    font-size: 25px !important;
+  }
+
+
+.btn-green{
+  margin-left: 15px;
+}
+  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .btn-round {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+  }
+
+  /**** tamnaho botao ***/
+  .btn-round.btn-sm {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .btn-danger{
+    line-height: 0;
+    font-size: 25px !important;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+
