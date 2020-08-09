@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabelaComponent } from './tabela.component';
+import { BlazerSemBabadoComponent } from './blazer-sem-babado.component';
 
-describe('TabelaComponent', () => {
-  let component: TabelaComponent;
-  let fixture: ComponentFixture<TabelaComponent>;
+describe('BlazerSemBabadoComponent', () => {
+  let component: BlazerSemBabadoComponent;
+  let fixture: ComponentFixture<BlazerSemBabadoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TabelaComponent ]
+      declarations: [ BlazerSemBabadoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TabelaComponent);
+    fixture = TestBed.createComponent(BlazerSemBabadoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

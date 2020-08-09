@@ -48,12 +48,19 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
-import { TabelaComponent } from './app/tabela/tabela.component';
+import { SobretudoComponent } from './sobretudo/sobretudo.component';
+import { BlazerSemBabadoComponent } from './blazer-sem-babado/blazer-sem-babado.component';
+import { ChamiseComponent } from './chamise/chamise.component';
+import { VestidoXadrezComponent } from './vestido-xadrez/vestido-xadrez.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TabelaComponent
+    SobretudoComponent,
+    BlazerSemBabadoComponent,
+    ChamiseComponent,
+    VestidoXadrezComponent,
+
   ],
   imports: [
     BrowserModule,

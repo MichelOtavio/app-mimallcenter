@@ -1,0 +1,727 @@
+
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <strong>SOBRETUDO</strong>
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <!--Conteudo-->
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">P</th>
+          <th scope="col">M</th>
+          <th scope="col">G</th>
+          <th scope="col">GG</th>
+          <th scope="col">G1</th>
+          <th scope="col">G2</th>
+          <th scope="col">G3</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- ***********  preto ***********-->
+        <tr>
+          <th scope="row">Preto </th>
+          <td><strong>{{ base1_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_p('value')"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base1_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base1_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base1_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base1_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base1_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base1_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base1_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base1_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  preto ***********-->
+
+        <!-- ***********  Branco ***********-->
+        <tr>
+          <th scope="row">Branco </th>
+          <td><strong>{{ base2_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base2_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base2_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base2_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base2_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base2_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base2_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base2_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base2_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Branco ***********-->
+
+        <!-- ***********  Pink ***********-->
+        <tr>
+          <th scope="row">Pink </th>
+          <td><strong>{{ base3_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base3_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base3_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base3_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base3_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base3_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base3_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base3_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base3_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Pink ***********-->
+
+        <!-- ***********  ROSE ***********-->
+        <tr>
+          <th scope="row">Rose </th>
+          <td><strong>{{ base4_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base4_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base4_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base4_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base4_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base4_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base4_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base4_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base4_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  ROSE ***********-->
+
+        <!-- ***********  Amarelo ***********-->
+        <tr>
+          <th scope="row">Amarelo </th>
+          <td><strong>{{ base5_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base5_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base5_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base5_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base5_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base5_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base5_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base5_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base5_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Amarelo ***********-->
+
+        <!-- ***********  Vermelho ***********-->
+        <tr>
+          <th scope="row">Vermelho </th>
+          <td><strong>{{ base6_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base6_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base6_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base6_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base6_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base6_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base6_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base6_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base6_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Vermelho ***********-->
+
+        <!-- ***********  Royal ***********-->
+        <tr>
+          <th scope="row">Royal </th>
+          <td><strong>{{ base7_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base7_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base7_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base7_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base7_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base7_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base7_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base7_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base7_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Royal ***********-->
+
+        <!-- ***********  Marinho ***********-->
+        <tr>
+          <th scope="row">Marinho </th>
+          <td><strong>{{ base8_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base8_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base8_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base8_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base8_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base8_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base8_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base8_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base8_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Marinho ***********-->
+
+        <!-- ***********  Militar ***********-->
+        <tr>
+          <th scope="row">Militar </th>
+          <td><strong>{{ base9_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base9_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base9_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base9_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base9_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base9_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base9_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base9_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base9_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Militar ***********-->
+
+        <!-- ***********  Azul BB ***********-->
+        <tr>
+          <th scope="row">Azul BB </th>
+          <td><strong>{{ base10_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base10_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base10_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base10_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base10_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base10_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base10_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base10_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base10_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Azul BB ***********-->
+
+        <!-- ***********  Vinho ***********-->
+        <tr>
+          <th scope="row">Vinho </th>
+          <td><strong>{{ base11_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base11_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base11_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base11_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base11_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base11_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base11_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base11_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base11_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Vinho ***********-->
+
+        <!-- ***********  Esmeralda ***********-->
+        <tr>
+          <th scope="row">Esmeralda </th>
+          <td><strong>{{ base12_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base12_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base12_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base12_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base12_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base12_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base12_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base12_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base12_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Esmeralda ***********-->
+
+        <!-- ***********  Bege ***********-->
+        <tr>
+          <th scope="row">Bege </th>
+          <td><strong>{{ base13_p }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_p()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+
+
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_p()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base13_m }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_m()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_m()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base13_g }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_g()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_g()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base13_gg }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_gg()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_gg()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base13_g1 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_g1()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_g1()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base13_g2 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_g2()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_g2()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+          <td><strong>{{ base13_g3 }}</strong>
+            <button type="button" class="btn btn-success btn-sm btn-round" (click)="increment_base13_g3()"><span
+                class="glyphicon glyphicon-align-center"></span>+</button>
+            <button type="button" class="btn btn-danger btn-sm btn-round" (click)="decrement_base13_g3()"><span
+                class="glyphicon glyphicon-trash">-</span></button>
+          </td>
+        </tr>
+        <!-- ***********  Bege ***********-->
+
+        <tr >
+          <th scope="row">TOTAL</th>
+           <td>
+             <strong>
+               {{ base1_p + base2_p + base3_p + base4_p + base5_p + base6_p + base7_p + base8_p + base9_p + base10_p + base11_p + base12_p + base13_p }}
+
+             </strong>
+          </td>
+          <td>
+            <strong>
+              {{ base1_m + base2_m + base3_m + base4_m + base5_m + base6_m + base7_m + base8_m + base9_m + base10_m + base11_m + base12_m + base13_m }}
+            </strong>
+         </td>
+          <td>
+            <strong>
+             {{  base1_g + base2_g + base3_g + base4_g + base5_g + base6_g + base7_g + base8_g + base9_g + base10_g + base11_g + base12_g + base13_g }}
+            </strong>
+          </td>
+          <td>
+            <strong>
+             {{ base1_gg + base2_gg + base3_gg + base4_gg + base5_gg + base6_gg + base7_gg + base8_gg + base9_gg + base10_gg + base11_gg + base12_gg + base13_gg }}
+            </strong>
+          </td>
+          <td>
+            <strong>
+              {{  base1_g1 + base2_g1 + base3_g1 + base4_g1 + base5_g1 + base6_g1 + base7_g1 + base8_g1 + base9_g1 + base10_g1 + base11_g1 + base12_g1 + base13_g1 }}
+            </strong>
+          </td>
+          <td>
+            <strong>
+              {{ base1_g2 + base2_g2 + base3_g2 + base4_g2 + base5_g2 + base6_g2 + base7_g2 + base8_g2 + base9_g2 + base10_g2 + base11_g2 + base12_g2 + base13_g2 }}
+            </strong>
+          </td>
+          <td>
+            <strong>
+              {{ base1_g3 + base2_g3 + base3_g3 + base4_g3 + base5_g3 + base6_g3 + base7_g3 + base8_g3 + base9_g3 + base10_g3 + base11_g3 + base12_g3 + base13_g3 }}
+            </strong>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+
+
+
+
+  </mat-expansion-panel>
+
+
+
+
